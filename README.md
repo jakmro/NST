@@ -18,7 +18,7 @@ make
 
 ## Usage
 ```bash
-./nst type <resolution_width> <resolution_height> <src> <style> <dst>
+./nst <type> <resolution_width> <resolution_height> <src> <style> <dst>
 ```
 
 Command Parameters:
