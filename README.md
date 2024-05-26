@@ -10,11 +10,11 @@ This project demonstrates the integration of PyTorch and OpenCV to process image
 Ensure that you have installed the required libraries (OpenCV and LibTorch) on your system.
 
 ## Build project:
-    ```bash
-    mkdir build && cd build
-    cmake ..
-    make
-    ```
+```bash
+mkdir build && cd build
+cmake ..
+make
+```
 
 ## Usage
 ```bash
