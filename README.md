@@ -11,38 +11,39 @@ Ensure that you have installed the required libraries (OpenCV and LibTorch) on y
 
 ## Build project:
 ```bash
-mkdir build && cd build
+mkdir build
+cd build
 cmake ..
 make
 ```
 
 ## Usage
 ```bash
-./nst <type> <resolution_width> <resolution_height> <src> <style> <dst>
+./nst <type> <resolution_width> <resolution_height> <style> <src> <dst>
 ```
 
 Command Parameters:
-- `type:` Specifies the type of input, either image or video. This parameter tells the application how to handle the input file, either as a single image or a sequence of images in a video.
+- `type:` Specifies the type of input, either image or video. This parameter tells the application how to handle the input file, either as a single image (.jpg) or as a video (.mp4).
 
 - `resolution_width`: The width of the output file in pixels. This defines the horizontal size of the processed output.
 
 - `resolution_height`: The height of the output file in pixels. This defines the vertical size of the processed output.
 
-- `src`: The path to the source file. This is the input image or video file that you want to apply the style transfer to.
-
 - `style`: The name of the style model to use for the transfer. This parameter should correspond to a pre-trained model file that implements a particular artistic style.
+
+- `src`: The path to the source file. This is the input image or video file that you want to apply the style transfer to.
 
 - `dst`: The destination path where the stylized output will be saved. This should be a valid path where the application can write the processed image or video.
 
 ## Example
 Image style transfer:
 ```bash
-./nst image 640 480 ./input/example.jpg example_model ./output/processed_example.jpg
+./nst image 640 480 mosaic .../example.jpg .../processed_example.jpg
 ```
 
 Video style transfer:
 ```bash
-./nst video 640 480 ./input/example.mp4 example_model ./output/processed_example.mp4
+./nst video 640 480 udnie .../example.mp4 .../processed_example.mp4
 ```
 
 Warning: The resolution width and height will be rounded to the smallest number divisible by 4 greater than the given number.

@@ -47,8 +47,8 @@ int main(int argc, char* argv[]) {
     std::string input_type(argv[1]);
     int resolution_width = atoi(argv[2]);
     int resolution_height = atoi(argv[3]);
-    std::string input_path(argv[4]);
-    std::string model_name(argv[5]);
+    std::string model_name(argv[4]);
+    std::string input_path(argv[5]);
     std::string output_path(argv[6]);
 
     // make width and height divisible by 4
