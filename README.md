@@ -23,7 +23,7 @@ make
 ```
 
 Command Parameters:
-- `type:` Specifies the type of input, either image or video. This parameter tells the application how to handle the input file, either as a single image (.jpg) or as a video (.mp4).
+- `type:` Specifies the type of input, either `image` or `video`. This parameter tells the application how to handle the input file, either as a single image (.jpg) or as a video (.mp4).
 
 - `resolution_width`: The width of the output file in pixels. This defines the horizontal size of the processed output.
 
